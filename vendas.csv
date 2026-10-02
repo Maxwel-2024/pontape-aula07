@@ -1,0 +1,36 @@
+data,produto,categoria,quantidade,preco_unit
+2025-01-03,Notebook Dell,Eletrônicos,2,3500.00
+2025-01-05,Camiseta básica,Roupas,5,49.90
+2025-01-08,Café 500g,Alimentos,12,28.50
+2025-01-10,Livro: Clean Code,Livros,3,89.90
+2025-01-12,Mouse gamer,Eletrônicos,7,189.00
+2025-01-15,Calça jeans,Roupas,4,159.00
+2025-01-18,Azeite extra virgem,Alimentos,8,45.00
+2025-01-20,Livro: O Senhor dos Anéis,Livros,2,129.00
+2025-01-22,Teclado mecânico,Eletrônicos,3,449.00
+2025-01-25,Vestido,Roupas,2,189.00
+2025-01-28,Chocolate amargo,Alimentos,20,18.90
+2025-01-30,Livro: Sapiens,Livros,5,69.90
+2025-02-02,Monitor 24",Eletrônicos,1,1299.00
+2025-02-05,Jaqueta de couro,Roupas,1,599.00
+2025-02-08,Café 500g,Alimentos,15,28.50
+2025-02-10,Livro: 1984,Livros,4,49.90
+2025-02-12,Webcam HD,Eletrônicos,2,299.00
+2025-02-15,Tênis esportivo,Roupas,3,349.00
+2025-02-18,Pão integral,Alimentos,25,12.50
+2025-02-20,Livro: O Poder do Hábito,Livros,3,79.90
+2025-02-22,Headset gamer,Eletrônicos,4,329.00
+2025-02-25,Camisa social,Roupas,6,129.00
+2025-02-28,Vinho tinto,Alimentos,5,89.90
+2025-03-02,Livro: Dune,Livros,2,99.90
+2025-03-05,SSD 1TB,Eletrônicos,3,599.00
+2025-03-08,Bermuda,Roupas,8,79.90
+2025-03-10,Queijo brie,Alimentos,4,45.00
+2025-03-12,Livro: Mindset,Livros,6,59.90
+2025-03-15,Pendrive 64GB,Eletrônicos,10,49.90
+2025-03-18,Saia midi,Roupas,3,99.00
+2025-03-20,Chá verde,Alimentos,18,22.00
+2025-03-22,Livro: Hábitos Atômicos,Livros,8,79.90
+2025-03-25,Cabo HDMI,Eletrônicos,15,29.90
+2025-03-28,Blusa de frio,Roupas,5,179.00
+2025-03-30,Café especial,Alimentos,10,38.50
