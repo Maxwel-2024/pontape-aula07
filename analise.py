@@ -1,30 +1,27 @@
 import pandas as pd
 
-# 1. Carregar o CSV e criar a coluna receita
+# 1. Carregar o arquivo CSV e calcular a receita
 df = pd.read_csv("vendas.csv")
 df["receita"] = df["quantidade"] * df["preco_unit"]
 
-# 2. Receita total da loja no trimestre
-receita_total = df["receita"].sum()
-print("=== Receita total ===")
-print(
-    f"R$ {receita_total:,.2f}"
+# 2. Converter a coluna 'data' para datetime
+df["data"] = pd.to_datetime(df["data"])
+
+# 3. Filtrar apenas as vendas de fevereiro (mês 2)
+df_fevereiro = df[df["data"].dt.month == 2]
+
+# 4. Exibir a tabela filtrada
+print("=== Vendas de Fevereiro/2025 ===")
+print(df_fevereiro.to_string(index=False))
+
+# 5. Calcular e exibir a receita total de fevereiro
+receita_fevereiro = df_fevereiro["receita"].sum()
+receita_fmt = (
+    f"R$ {receita_fevereiro:,.2f}"
     .replace(",", "X")
     .replace(".", ",")
     .replace("X", ".")
 )
 
-# 3. Receita por categoria ordenada do maior para o menor
-receita_categoria = (
-    df.groupby("categoria")["receita"].sum().sort_values(ascending=False)
-)
-
-print("\n=== Receita por categoria ===")
-for categoria, valor in receita_categoria.items():
-    valor_formatado = (
-        f"R$ {valor:,.2f}"
-        .replace(",", "X")
-        .replace(".", ",")
-        .replace("X", ".")
-    )
-    print(f"{categoria:<15}{valor_formatado}")
+print("\n=== Receita de Fevereiro ===")
+print(receita_fmt)
